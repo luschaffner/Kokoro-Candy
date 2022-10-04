@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
-import Header from './Componentes/Navbar/Header';
+import Navbar from './Componentes/Navbar/Navbar';
 
 const App = () => {
   return (
     <>
-      <Header/>
+      <Navbar/>
     </>
   );
 };
