@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <header>
             <img src={candy} alt="tienda online"/>
-            <h1>Sugar Rush</h1>
+            <h1>Kokoro Candy</h1>
             <nav>
                 <a href="">Caramelos</a>
                 <a href="">Chupetines</a>
