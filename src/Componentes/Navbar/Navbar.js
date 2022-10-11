@@ -1,7 +1,7 @@
 import React from "react"
 import candy from '../../Asset/candy.png'
 import './Navbar.css'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CartWidget } from "../CartWidget/CartWidget";
 
 const Navbar = () => {
     return (
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <a href="">Chocolates</a>
                 <a href="">Galletitas</a>
             </nav>
-            <ShoppingCartIcon className="cart" color="primary" sx={{ fontSize: 40 }}/>
+            <cartWidget/>
         </header>
     );
 };

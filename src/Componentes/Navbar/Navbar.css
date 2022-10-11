@@ -14,10 +14,7 @@ nav{
     margin-top: 40px;
 }
 a{
-    margin: 0px 40px 0px 40px;
+    margin: 0px 40px s0px 40px;
     color:rgb(148, 85, 207);
     text-decoration: none;
-}
-.cart{
-    margin-top: 32px;
 }
