@@ -1,7 +1,7 @@
 import React from "react"
 import candy from '../../Asset/candy.png'
 import './Navbar.css'
-import { CartWidget } from "../CartWidget/CartWidget";
+import { CartWidget } from "../CartWidget/cartWidget";
 
 const Navbar = () => {
     return (
@@ -14,7 +14,7 @@ const Navbar = () => {
                 <a href="">Chocolates</a>
                 <a href="">Galletitas</a>
             </nav>
-            <cartWidget/>
+            <CartWidget/>
         </header>
     );
 };

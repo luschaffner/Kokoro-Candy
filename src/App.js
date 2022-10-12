@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import Navbar from './Componentes/Navbar/Navbar';
-import itemListConteiner from './Componentes/itemListConteiner/itemListConteiner';
+import ItemListContainer from './Container/ItemListContainer/ItemListContainer';
 
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <itemListConteiner greeting= {mensaje}/>
+      <ItemListContainer greeting= {mensaje}/>
     </>
   );
 };
