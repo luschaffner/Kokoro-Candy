@@ -1,7 +1,9 @@
 import React from "react";
 import './App.css';
 import Navbar from './Componentes/Navbar/Navbar';
-import ItemListContainer from './Container/ItemListContainer/ItemListContainer';
+import { ItemListContainer } from './Container/ItemListContainer';
+import { ComponentesEstados }  from './ComponentesEstados';
+
 
 
 const App = () => {
@@ -10,6 +12,7 @@ const App = () => {
     <>
       <Navbar/>
       <ItemListContainer greeting= {mensaje}/>
+      <ComponentesEstados/>
     </>
   );
 };
