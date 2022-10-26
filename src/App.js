@@ -1,20 +1,34 @@
-import React from "react";
+import Navbar from './Componentes/Navbar';
 import './App.css';
-import Navbar from './Componentes/Navbar/Navbar';
-import { ItemListContainer } from './Container/ItemListContainer';
-import { ComponentesEstados }  from './ComponentesEstados';
+import {Cart} from "./Componentes/Cart/Cart";
+import ItemListContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 
-const App = () => {
-  const mensaje  = "Kokoro Candy, Los dulces más ricos 💗"
+function App () {
   return (
-    <>
-      <Navbar/>
-      <ItemListContainer greeting= {mensaje}/>
-      <ComponentesEstados/>
-    </>
-  );
-};
+    <div className="App">
 
-export default App; 
+  <BrowserRouter>
+  <Navbar/>
+
+
+<Routes>
+<Route path = "/"/>
+<Route path ="/categoria/:id" element = {<ItemListContainer greeting={'Bienvenidos'} mensaje ={ 'amantes de las golosinas'}/>}/>
+<Route path ="/producto/:id" element= {<ItemDetailContainer/>}/>
+<Route path ="/shop" element= {<Cart/>}/>
+
+
+</Routes>
+
+</BrowserRouter>
+
+
+    </div>
+  );
+}
+
+export default App;
